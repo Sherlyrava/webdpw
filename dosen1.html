@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOSEN-TEKNIK INFORMATIKA UNRI</title>
+    <link rel="stylesheet" href="bootstrap-5.2.3-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    
+    <style>
+    @media (max-width: 768px) {
+        .video-container {
+            padding-bottom: 5%;
+        }
+    }
+
+    .video-container {
+        position: relative;
+        padding-bottom: 40.25%;
+        padding-top: 30px;
+        height: 0;
+        overflow: hidden;
+    }
+
+    .video-container iframe {
+        position: absolute;
+        top: 0;
+        left: 0;padding: 20px;
+        padding-top: 0px;
+        width: 100%;
+        height: 100%;
+    }
+
+    .footer-top{
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }  
+    .medsos ul li{
+        display:inline-block;
+        color: #fff;
+        margin-right: 3px;
+        display : inline-block; 
+    }
+    .medsos ul li a {
+        display:inline-block;
+            display : inline-block; 
+            color:white; 
+            font-size: 16px;
+        }    
+        .social-media-icon{
+            padding-right: 10px;
+        }
+        .fa-twitter {
+            padding: 5px;
+            background:rgb(67, 153, 228);
+            color: #fff;
+            border-radius: 4px;
+            
+        }
+        .fa-youtube{
+            padding: 5px;
+            background:rgb(253, 12, 12);
+            color: #fff;
+            border-radius: 4px;
+        }
+        .fa-instagram{
+            padding: 5px;
+            background:rgb(253, 12, 201);
+            color: #fff;
+            border-radius: 4px;
+        }
+        .fa-envelope{
+            padding: 5px;
+            background:rgb(253, 100, 12);
+            color: #fff;
+            border-radius: 4px;
+        }
+        a.social-media-icon:hover{
+            background: #fff!important;
+            color: #222!important;
+        }
+        header{
+            padding-bottom: 20pt;
+        }
+        .title {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-top: 50pt;
+            padding-bottom: 5pt            ;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 2rem;
+            font-weight: bold;
+            margin: 0 20px;
+        }
+
+        .left, .right {
+            flex: 1;
+            height: 5px;
+            background-color: #066eff;
+            margin: 0 10px;
+        }
+
+        .gambar {
+            display: flex;
+            justify-content: center;
+        }
+
+        img {
+            margin: auto;
+            max-width: 100%;
+            max-height: 100%;
+        }
+        .content {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.member {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.member img {
+  width: 230px;
+  height: 230px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+
+          
+    </style>
+</head>
+<body style="font-family: poppins;">
+    <!-- logo dan search -->
+    <script src="bootstrap-5.2.3-dist/js/bootstrap.bundle.min.js"></script>     
+    <nav class="navbar navbar-expand-lg bg-light" >
+        <div class="container-fluid" style="background-color: #fff;">
+          <a class="navbar-brand" href="#">
+            <img src="Aset/LogoUnri.png" style="padding-left: 30px;" alt="">
+            <img src="Aset/S1TI.png" style="padding-left: 30px;" alt="">
+          </a>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+      </nav>
+    
+    <!-- navbar -->
+    <div class="sticky-top">
+    <nav class="navbar navbar-expand-lg bg-light" >
+        <div class="container-fluid" style="background-color:#0B2447;">  
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html" style="color: aliceblue;">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" style="color: aliceblue;">Profil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" style="color: aliceblue;">Prestasi</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="kontak.html" style="color: aliceblue;">Kontak</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" style="color: aliceblue;">Akademik</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" style="color: aliceblue;">Dosen</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav> 
+    </div>
+   <!-- slide gambar -->
+   <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+        <div class="carousel">
+            <img src="Aset/zyro-image (3).png" class="d-block w-100" alt="...">
+            <div class="position-absolute top-0 start-50 translate-middle-x">
+                <h1 class="text-center text-white" style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; text-align: center; color: #b96f6f; padding-top: 140pt; font-size: 3rem;" ><b>Dosen</b></h1>
+              </div>
+        </div>
+    </div>
+  </div>
+
+   <!-- menu navigasi dibawah gambar -->
+   <header>
+    <div class="container">
+       <div class="title">
+        <hr class="left">
+        <h1>Koordinator <br> Prodi</h1>
+        <hr class="right">
+      </div>
+      <div class="content">
+                   
+        <div class="member">
+          <img src="http://informatika.ft.unri.ac.id/wp-content/uploads/pp-fc.jpg" alt="Nama Anggota">
+          <h3>Dr. Feri Candra, S.T., M.T.</h3>
+          <p>Coordinator of Study program</p>
+        </div>
+        
+        <!-- Tambahkan div member untuk anggota lainnya -->
+      </div>    
+    </div>
+   
+
+    <div class="container">
+        <div class="title">
+         <hr class="left">
+         <h1>Dosen</h1>
+         <hr class="right">
+       </div>
+       
+       <!-- baris pertama -->
+       <div class="row">
+        <div class="col-md-4" style="padding-top: 30pt;">
+            <div class="content">
+                <div class="member">
+                  <img src="http://informatika.ft.unri.ac.id/wp-content/uploads/pp-fc.jpg" alt="Nama Anggota">
+                </div>
+            </div>
+            <h4 style="text-align: center;">Dr. Feri Candra, S.T., M.T.</h4>
+            <h6 style="text-align: center;">Pendidikan :</h6>
+            <p style="text-align: center; color: #615f5f;">S1-Institut Sains Dan Teknologi Nasional <br>S2-Universitas Indonesia <br> S3-Universiti Teknologi Malaysia  </p>
+            <h6 style="text-align: center;">Bidang Keahlian :</h6>
+            <p style="text-align: center; color: #615f5f;">Machine Learning <br>Computer Vision <br>Robotic</p>
+            <a href="aset/link1.png" style=" display: flex; justify-content: center;"><img src="aset/link1.png" alt="" style="width: 20px;  "></a>
+            <a href="aset/link1.png" style=" display: flex; justify-content: center;"><img src="aset/link1.png" alt="" style="width: 20px;  "></a>
+        </div>
+        <div class="col-md-4" style="padding-top: 30pt;">
+            <div class="content">
+                <div class="member">
+                  <img src="http://informatika.ft.unri.ac.id/wp-content/uploads/pp-dm.jpg" alt="Nama Anggota">
+                </div>
+            </div>
+            <h4 style="text-align: center;">Dr. Dahliyusmanto S.Kom., M.Sc.</h4>
+            <h6 style="text-align: center;">Pendidikan :</h6>
+            <p style="text-align: center; color: #615f5f;">S1-Universitas Putra Indonesia <br>S2-Universiti Teknologi Malaysia <br> S3-Universiti Teknologi Malaysia </p>
+            <h6 style="text-align: center;">Bidang Keahlian :</h6>
+            <p style="text-align: center; color: #615f5f;">Computer and Network Security <br>Data Mining <br>Image Processing</p>
+            <a href="aset/link1.png" style=" display: flex; justify-content: center;"><img src="aset/link1.png" alt="" style="width: 20px;  "></a>
+            <a href="aset/link1.png" style=" display: flex; justify-content: center;"><img src="aset/link1.png" alt="" style="width: 20px;  "></a>
+        </div>
+        <div class="col-md-4" style="padding-top: 30pt;">
+            <div class="content">
+                <div class="member">
+                  <img src="http://informatika.ft.unri.ac.id/wp-content/uploads/pp-it.jpg" alt="Nama Anggota">
+                </div>
+            </div>
+            <h4 style="text-align: center;">Dr. Irsan Taufik Ali, S.T., M.T.</h4>
+            <h6 style="text-align: center;">Pendidikan :</h6>
+            <p style="text-align: center; color: #615f5f;">S1-Universitas Islam Indonesia <br>S2-Universitas Gadjah Mada <br>S3-Universitas Indonesia</p>
+            <h6 style="text-align: center;">Bidang Keahlian :</h6>
+            <p style="text-align: center; color: #615f5f;">Sistem Informasi <br>Internet of Things <br>Mechine Learning (Deep Learning)</p>
+            <a href="aset/link1.png" style=" display: flex; justify-content: center;"><img src="aset/link1.png" alt="" style="width: 20px;  "></a>
+            <a href="aset/link1.png" style=" display: flex; justify-content: center;"><img src="aset/link1.png" alt="" style="width: 20px;  "></a>
+        </div>
+    </div>
+
+     <!-- baris kedua -->
+     <div class="row">
+        <div class="col-md-4" style="padding-top: 20pt;">
+            <div class="content">
+                <div class="member">
+                  <img src="http://informatika.ft.unri.ac.id/wp-content/uploads/pp-nl.jpg" alt="Nama Anggota">
+                </div>
+            </div>
+            <h4 style="text-align: center;">Noveri Lysbetti Marpaung, S.T., M.Sc.</h4>
+            <h6 style="text-align: center;">Pendidikan :</h6>
+            <p style="text-align: center; color: #615f5f;">S1-Universitas Sumatera Utara <br>S2-Newcastle University </p>
+            <h6 style="text-align: center;">Bidang Keahlian :</h6>
+            <p style="text-align: center; color: #615f5f;">Kendali Komputer <br>Wireless Sensor Network <br>Artificial Intelligence and Digital <br>Support System</p>
+            <a href="aset/link1.png" style=" display: flex; justify-content: center;"><img src="aset/link1.png" alt="" style="width: 20px;  "></a>
+            <a href="aset/link1.png" style=" display: flex; justify-content: center;"><img src="aset/link1.png" alt="" style="width: 20px;  "></a>
+        </div>
+        <div class="col-md-4" style="padding-top: 20pt;">
+            <div class="content">
+                <div class="member">
+                  <img src="http://informatika.ft.unri.ac.id/wp-content/uploads/pp-ra.jpg" alt="Nama Anggota">
+                </div>
+            </div>
+            <h4 style="text-align: center;">Rahyul Amri, S.T., M.T.</h4>
+            <h6 style="text-align: center;">Pendidikan :</h6>
+            <p style="text-align: center; color: #615f5f;">S1-Universitas Islam Sumatera Utara <br>S2-Institut Teknologi Sepuluh Nopember</p>
+            <h6 style="text-align: center;">Bidang Keahlian :</h6>
+            <p style="text-align: center; color: #615f5f;">Internet of Things <br>Microcontroller <br>Software Engineering</p>
+            <a href="aset/link1.png" style=" display: flex; justify-content: center;"><img src="aset/link1.png" alt="" style="width: 20px;  "></a>
+            <a href="aset/link1.png" style=" display: flex; justify-content: center;"><img src="aset/link1.png" alt="" style="width: 20px;  "></a>
+        </div>
+        <div class="col-md-4" style="padding-top: 20pt;">
+            <div class="content">
+                <div class="member">
+                  <img src="http://informatika.ft.unri.ac.id/wp-content/uploads/pp-lo2.jpg" alt="Nama Anggota">
+                </div>
+            </div>
+            <h4 style="text-align: center;">Linna Oktaviana Sari, S.T., M.T.</h4>
+            <h6 style="text-align: center;">Pendidikan :</h6>
+            <p style="text-align: center; color: #615f5f;">S1-Universitas Pancasila <br>S2-Universitas Indonesia</p>
+            <h6 style="text-align: center;">Bidang Keahlian :</h6>
+            <p style="text-align: center; color: #615f5f;">Jaringan Komunikasi<br>Telekomunikasi <br>Wireless Communication</p>
+            <a href="aset/link1.png" style=" display: flex; justify-content: center;"><img src="aset/link1.png" alt="" style="width: 20px;  "></a>
+            <a href="aset/link1.png" style=" display: flex; justify-content: center;"><img src="aset/link1.png" alt="" style="width: 20px;  "></a>
+        </div>
+    </div>
+     <!-- baris ketiga -->
+     <div class="row">
+        <div class="col-md-4"style="padding-top: 30pt;" >
+            <div class="content">
+                <div class="member">
+                  <img src="http://informatika.ft.unri.ac.id/wp-content/uploads/pp-sn.jpg" alt="Nama Anggota">
+                </div>
+            </div>
+            <h4 style="text-align: center;">Salhazan Nasution, S.Kom., MIT.</h4>
+            <h6 style="text-align: center;">Pendidikan :</h6>
+            <p style="text-align: center; color: #615f5f;">S1-Universitas Islam Indonesia<br>S2-Universiti Kebangsaan Malaysia </p>
+            <h6 style="text-align: center;">Bidang Keahlian :</h6>
+            <p style="text-align: center; color: #615f5f;">Information System<br>Software Engineering <br>Usability</p>
+            <a href="aset/link1.png" style=" display: flex; justify-content: center;"><img src="aset/link1.png" alt="" style="width: 20px;  "></a>
+            <a href="aset/link1.png" style=" display: flex; justify-content: center;"><img src="aset/link1.png" alt="" style="width: 20px;  "></a>
+        </div>
+        <div class="col-md-4" style="padding-top: 30pt;">
+            <div class="content">
+                <div class="member">
+                  <img src="http://informatika.ft.unri.ac.id/wp-content/uploads/pp-rr.jpg" alt="Nama Anggota">
+                </div>
+            </div>
+            <h4 style="text-align: center;">Rahmat Rizal Andhi, S.T., M.T.</h4>
+            <h6 style="text-align: center;">Pendidikan :</h6>
+            <p style="text-align: center; color: #615f5f;">S1-Universitas Pasundan <br>S2-Institut Teknologi Bandung </p>
+            <h6 style="text-align: center;">Bidang Keahlian :</h6>
+            <p style="text-align: center; color: #615f5f;">Animation<br>Augmented Reality & Virtual Reality<br>Mobile App & Game Development</p>
+            <a href="aset/link1.png" style=" display: flex; justify-content: center;"><img src="aset/link1.png" alt="" style="width: 20px;  "></a>
+            <a href="aset/link1.png" style=" display: flex; justify-content: center;"><img src="aset/link1.png" alt="" style="width: 20px;  "></a>
+        </div>
+        <div class="col-md-4" style="padding-top: 30pt;">
+            <div class="content">
+                <div class="member">
+                  <img src="http://informatika.ft.unri.ac.id/wp-content/uploads/pp-ty.jpg" alt="Nama Anggota">
+                </div>
+            </div>
+            <h4 style="text-align: center;">T. Yudi Hadiwandra, S.Kom., M.Kom.</h4>
+            <h6 style="text-align: center;">Pendidikan :</h6>
+            <p style="text-align: center; color: #615f5f;">S1-Universitas Gunadarma <br>S2-Universitas Gadjah Mada</p>
+            <h6 style="text-align: center;">Bidang Keahlian :</h6>
+            <p style="text-align: center; color: #615f5f;">Artificial Intelligence<br>Computer Vision<br>Data Mining</p>
+            <a href="aset/link1.png" style=" display: flex; justify-content: center;"><img src="aset/link1.png" alt="" style="width: 20px;  "></a>
+            <a href="aset/link1.png" style=" display: flex; justify-content: center;"><img src="aset/link1.png" alt="" style="width: 20px;  "></a>
+        </div>
+    </div>
+
+     <!-- baris keempat -->
+     <div class="row">
+        <div class="col-md-4" style="padding-top: 30pt;">
+            <div class="content">
+                <div class="member">
+                  <img src="http://informatika.ft.unri.ac.id/wp-content/uploads/pp-dr.jpg" alt="Nama Anggota">
+                </div>
+            </div>
+            <h4 style="text-align: center;">Dian Ramadhani, S.T., M.T.</h4>
+            <h6 style="text-align: center;">Pendidikan :</h6>
+            <p style="text-align: center; color: #615f5f;">S1-Universitas Islam Negeri Sultan Syarif Kasim <br>S2-Institut Teknologi Bandung </p>
+            <h6 style="text-align: center;">Bidang Keahlian :</h6>
+            <p style="text-align: center; color: #615f5f;">Data Mining <br>Data Warehouse<br>Business Intelligence</p>
+            <a href="aset/link1.png" style=" display: flex; justify-content: center;"><img src="aset/link1.png" alt="" style="width: 20px;  "></a>
+            <a href="aset/link1.png" style=" display: flex; justify-content: center;"><img src="aset/link1.png" alt="" style="width: 20px;  "></a>
+        </div>
+        <div class="col-md-4" style="padding-top: 30pt;">
+            <div class="content">
+                <div class="member">
+                  <img src="http://informatika.ft.unri.ac.id/wp-content/uploads/pp-ed.jpg" alt="Nama Anggota">
+                </div>
+            </div>
+            <h4 style="text-align: center;">Edi Susilo, S.Pd., M.Kom., M.Eng.</h4>
+            <h6 style="text-align: center;">Pendidikan :</h6>
+            <p style="text-align: center; color: #615f5f;">S1-Universitas Negeri Yogyakarta <br>S2-Universitas Amikom Yogyakarta<br>S2-Universitas Gadjah Mada</p>
+            <h6 style="text-align: center;">Bidang Keahlian :</h6>
+            <p style="text-align: center; color: #615f5f;">Software Engineering <br>Human-Computer Interaction<br>UI/UX</p>
+            <a href="aset/link1.png" style=" display: flex; justify-content: center;"><img src="aset/link1.png" alt="" style="width: 20px;  "></a>
+            <a href="aset/link1.png" style=" display: flex; justify-content: center;"><img src="aset/link1.png" alt="" style="width: 20px;  "></a>
+        </div>
+        <div class="col-md-4" style="padding-top: 30pt;">
+            <div class="content">
+                <div class="member">
+                  <img src="http://informatika.ft.unri.ac.id/wp-content/uploads/pp-dn.jpg" alt="Nama Anggota">
+                </div>
+            </div>
+            <h4 style="text-align: center;">Dr. Dewi Nasien, S.T., M.Sc.</h4>
+            <h6 style="text-align: center;">Pendidikan :</h6>
+            <p style="text-align: center; color: #615f5f;">S1-Universitas Islam Negeri Sultan Syarif Kasim <br>S2-Universiti Teknologi Malaysia <br> S3-Universiti Teknologi Malaysia </p>
+            <h6 style="text-align: center;">Bidang Keahlian :</h6>
+            <p style="text-align: center; color: #615f5f;">Machine Learning <br>Pattern recognition <br>Image processing</p>
+            <a href="aset/link1.png" style=" display: flex; justify-content: center;"><img src="aset/link1.png" alt="" style="width: 20px;  "></a>
+            <a href="aset/link1.png" style=" display: flex; justify-content: center;"><img src="aset/link1.png" alt="" style="width: 20px;  "></a>
+        </div>
+    </div>  
+
+    <!-- garis penutup -->
+     </div>
+     <div class="container">
+         <div class="title">
+          <hr class="left">
+        </div>
+     </div>
+
+    </header>
+
+       
+  
+      
+<!-- Footer -->
+<footer>
+    <div class="footer-top bg-black">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-sm-12 text-white" style="padding-top: 30px; ">
+                    <img src="Aset/pngwing.com.png" class="card bg-black " alt="...">
+                    <div class=" medsos">
+                        <p class="text-uppercase" style="padding-top: 20pt; padding-left: 10pt; font-family: poppin; ">program studi <br> s1 teknik <br> informatika</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-12 text-white" style="padding-top: 30px; ">
+                    <h2 style="border-bottom: 2px solid rgb(0, 128, 0); line-height: 50pt; width: 200pt; font-family: poppin;">Kotak</h2>
+                    <ul style="padding-left: 0pt; font-family: poppin;">
+                        <p>Gedung C lantai 2 Fakultas Teknik <br>
+                            Universitas Riau Kampus Binawidya <br>
+                            Jl.HR Soebrantas KM 12,5, Simpang <br>
+                            Baru, Binawidya, Pekanbaru-28293</p>
+                    </ul>
+                </div>
+                <div class="col-md-4 col-sm-12 text-white" style="padding-top: 30px;">
+                    <h2 style="border-bottom: 2px solid rgb(0, 128, 0); line-height: 50pt; width: 200pt; font-family: poppin;">Link Terkait</h2>
+                    <ul style="padding-left: 12pt; font-family: poppin;">
+                        <li><a href="#"></a>Beasiswa</li>
+                        <li><a href="#"></a>Berita Terkini</li>
+                        <li><a href="#"></a>Event</li>
+                        <li><a href="#"></a>Pengumuman</li>
+                        
+                    </ul>
+                </div>
+                <div class="col-md-12 col-sm-12 text-white align-content-center" >
+                    <div class=" medsos">
+                        <ul style="padding-left: 10pt">
+                                <li><a class="social-media-icon" href="https://link_social_mendia_anda"><span class="fab fa-twitter"></span></a></li>
+                                <li><a class="social-media-icon" href="https://link_social_mendia_anda"><span class="fab fa-youtube"></span></a></li>
+                                <li><a class="social-media-icon" href="https://link_social_mendia_anda"><span class="fab fa-instagram"></span></a></li>
+                                <li><a href="#"><i class="fa-solid fa-envelope"></i></a></li>
+                            </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-buttom-text bg-dark" > 
+        <img src="http://informatika.ft.unri.ac.id/wp-content/uploads/akreditasi-ti-b.png"  class="rounded mx-auto d-block" alt="" style="padding-top: 10pt; padding-bottom: 10pt;">
+    </div>
+</footer>
+</body>
+</html>

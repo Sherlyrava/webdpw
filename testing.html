@@ -76,7 +76,88 @@
             background: #fff!important;
             color: #222!important;
         }
-       
+        .title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 0 20px;
+}
+
+.left, .right {
+  flex: 10;
+  height: 10px;
+  background-color: #c15c5c;
+  margin: 0 10px;
+}
+
+.content {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.member {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.member img {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.member h2 {
+  margin: 0;
+  display: flex;
+  align-items: center;
+}
+
+.member-details {
+    flex-grow: 1;
+    position: relative;
+}
+.member-details h3 {
+  display: inline-block;
+}
+.member-details h3::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 100%;
+  height: 2px;
+  background-color: blue; /* Ganti 'blue' dengan warna yang diinginkan */
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+.member-details h3:hover::after {
+  transform: scaleX(1);
+}
+
+.underline {
+  height: 2px;
+  display: inline-block;
+  background-color: blue; /* Ganti 'blue' dengan warna yang diinginkan */
+  width: 50%; /* Ganti '80%' dengan panjang yang diinginkan, seperti '200px' atau '50%' */
+  margin-bottom: 10px; /* Ganti '10px' dengan ruang tambahan di bawah garis bawah */
+}
+.member p {
+  margin: 5px 0;
+}
+
+
+
     </style>
 </head>
 <body style="font-family: poppins;">
@@ -88,16 +169,16 @@
             <img src="Aset/LogoUnri.png" style="padding-left: 30px;" alt="">
             <img src="Aset/S1TI.png" style="padding-left: 30px;" alt="">
           </a>
-            <form class="d-flex" role="search">
+            <form class="d-flex" role="search" >
               <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Search</button>
+              <button class="btn btn-outline" style="background-color:#005aab; color: #fff;"  type="submit">Search</button>
             </form>
           </div>
       </nav>
     
     <!-- navbar -->
     <div class="sticky-top">
-    <nav class="navbar navbar-expand-lg " style="background-color:#111B48;" >
+    <nav class="navbar navbar-expand-lg " style="background-color:#005aab;" >
         <div class="container-fluid" >  
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -127,7 +208,8 @@
         </div>
     </nav> 
     </div>
-    
+
+      
     <!-- slide gambar -->
     <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
@@ -151,25 +233,56 @@
         </button>
       </div>
 
+      <div class="title">
+        <hr class="left">
+        <h1>2022</h1>
+        <hr class="right">
+      </div>
+      
       <!-- menu navigasi dibawah gambar -->
       <!-- menu navigasi dibawah gambar -->
       <header>
         <div class="container">
             <div class="row" >
             <div class="col1 col-md-4 col-xs-4" >
-                    <a class="nav-link" href="#" style="color: #fff; background-color: #111B48; text-align: center;">Akreditasi</a>
+                    <a class="nav-link" href="#" style="color: #fff; background-color: #48a40f; text-align: center; font-size: 20pt; "><b>Akreditasi</b></a>
             </div>
             <div class="col2 col-md-4 col-xs-4">
-                <a class="nav-link" href="#" style="color: #fff; background-color: #111B48; text-align: center;">Sertifikasi</a>
+                <a class="nav-link" href="#" style="color: #fff; background-color: #48a40f; text-align: center;">Sertifikasi</a>
             </div>
             <div class="col3 col-md-4 col-xs-4">
-                    <a class="nav-link" href="virtualTour.html" style="color: #fff; background-color: #111B48; text-align: center;">Dokumentasi</a>
+                    <a class="nav-link" href="virtualTour.html" style="color: #fff; background-color: #48a40f; text-align: center;">Dokumentasi</a>
             </div>
+        </div>
+        
 
+                <div class="row" style="padding-top: 50pt;" >
+                <div class="col1 col-md-4 col-xs-4" >
+                    <h2 style="border-bottom: 2px solid rgb(0, 128, 0); line-height: 50pt; width: 330pt; font-family: poppin; padding-top: 13pt;" ></h2>
+                </div>
+                <div class="col2 col-md-4 col-xs-4">
+                    <a href=""><h2 style="text-align: center;"> Koordinator Prodi</h2></a>
+                </div>
+                <div class="col3 col-md-4 col-xs-4">
+                     <h2 style="border-bottom: 2px solid rgb(0, 128, 0); line-height: 50pt; width: 330pt; font-family: poppin; padding-top: 13pt;" ></h2>
+                </div>
+
+                <div class="content">
+                   
+                    <div class="member">
+                      <img src="http://informatika.ft.unri.ac.id/wp-content/uploads/pp-fc.jpg" alt="Nama Anggota">
+                      <h2 style="border-bottom: 3px solid rgb(0, 128, 0); line-height:40pt; width: 30pt; font-family: poppin; padding-top: 13pt; text-align: center;" >Jabatan</h2>
+                      <div class="member-details">
+                        <div class="underline"></div>
+                        <p>Jabatan dan Deskripsi Anggota</p>
+                      </div>
+                    </div>
+                    
+                    <!-- Tambahkan div member untuk anggota lainnya -->
+                  </div>
+                  
         <!-- Berita terkini -->
-        <div class="container pt-4">
-        <h3>Berita Terkini</h3>
-            <div class="row">
+            <div class="row" >
             <div class="col-md-6" >
                 <img src="https://informatika.ft.unri.ac.id/wp-content/uploads/Prof-Azriyenni.jpg" style="width: 20px;" class="d-block w-100" alt="...">    
             </div>
@@ -271,11 +384,11 @@
 
     <!-- Footer -->
     <footer>
-        <div class="footer-top bg-black">
+        <div class="footer-top " style="background-color:#0a62a9;">
             <div class="container">
                 <div class="row">
                     <div class="col-md-4 col-sm-12 text-white" style="padding-top: 30px; ">
-                        <img src="Aset/pngwing.com.png" class="card bg-black " alt="...">
+                        <img src="Aset/pngwing.com.png" style="background-color:#0a62a9;" alt="...">
                         <div class=" medsos">
                             <p class="text-uppercase" style="padding-top: 20pt; padding-left: 10pt; font-family: poppin; ">program studi <br> s1 teknik <br> informatika</p>
                         </div>
