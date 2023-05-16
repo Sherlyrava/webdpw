@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap-5.2.3-dist/css/bootstrap.min.css">
+
+    <style>
+        .navbar .dropdown-menu {
+          margin-top: 0;
+          color:#ffffff;
+        }
+        
+        .navbar .nav-link {
+          position: relative;
+        }
+        
+        .navbar .dropdown-menu::before {
+          content: "";
+          position: absolute;
+          top: -10px;
+          left: 50%;
+          transform: translateX(-50%);
+          border-top: 10px solid transparent;
+          border-right: 10px solid transparent;
+          border-bottom: 10px solid #f8f9fa;
+          border-left: 10px solid transparent;
+          color:#ffffff;
+
+          
+        }
+
+        .dropdown-toggle::after {
+          display: none;
+          }
+    </style>
+</head>
+<body>
+    <script src="bootstrap-5.2.3-dist/js/bootstrap.bundle.min.js"></script> 
+
+    <nav class="navbar navbar-expand-lg navbar-lightb" style="background-color:#0B2447;">
+        <div class="container">
+          <a class="navbar-brand" style="color:#fff;" href="#">Logo</a>
+          <button class="navbar-toggler" style="color:#ffffff;" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon" style="color:#ffffff;"></span>
+          </button>
+          <div class="collapse navbar-collapse" style="color:#ffffff;" id="navbarNavDropdown">
+            <ul class="navbar-nav" style="color:#ffffff;">
+              <li class="nav-item dropdown" style="color:#ffffff;">
+                <a class="nav-link dropdown-toggle" style="color:#ffffff;" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Menu 1
+                </a>
+                <ul class="dropdown-menu" style="color:#ffffff;" aria-labelledby="navbarDropdownMenuLink">
+                  <li><a class="dropdown-item" href="#">Submenu 1</a></li>
+                  <li><a class="dropdown-item" href="#">Submenu 2</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" style="color:#ffffff;" id="navbarDropdownMenuLink2" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Menu 2
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink2">
+                  <li><a class="dropdown-item" href="#">Submenu 3</a></li>
+                  <li><a class="dropdown-item" href="#">Submenu 4</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Menu 3</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      
+</body>
+</html>

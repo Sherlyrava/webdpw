@@ -11,6 +11,51 @@
     
   
     <style>
+         @media (max-width: 768px) {
+        .video-container {
+            padding-bottom: 5%;
+        }
+    }
+
+    .navbar {
+          background-color: #f8f9fa;
+        }
+      
+        /* Warna latar belakang saat menu dihover */
+        .navbar-nav .nav-link:hover {
+          background-color: #0B2447;;
+          border-bottom: #eaeef2;
+        }
+      
+        /* Warna teks aktif */
+        .navbar-nav .nav-link.active {
+          color: #007bff;
+        }
+      
+        /* Warna latar belakang submenu */
+        .dropdown-menu {
+          background-color: #f8f9fa;;
+        }
+      
+        /* Warna teks submenu */
+        .dropdown-menu .dropdown-item {
+          color: #0B2447;
+        }
+        .dropdown-toggle::after {
+            display: none;
+        }
+       /* Warna latar belakang tombol menu menjadi transparan ketika ditampilkan secara mobile */
+  @media (max-width: 992px) {
+    .navbar-toggler {
+      background-color: transparent;
+      border-color: #fff; /* Ganti dengan warna garis yang diinginkan */
+    }
+    .navbar-toggler-icon {
+      color: #0B2447; /* Ganti dengan warna garis yang diinginkan */
+    }
+  }
+
+
     @media (max-width: 990px) {
         .kolom-2 {
             display: none;
@@ -134,35 +179,77 @@ p{
     
     <!-- navbar -->
     <div class="sticky-top">
-    <nav class="navbar navbar-expand-lg bg-light" >
-        <div class="container-fluid" style="background-color:#0B2447;">  
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <nav class="navbar navbar-expand-lg navbar-lightt" style="background-color: #0B2447;">
+            <div class="container">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#" style="color: aliceblue;">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#" style="color: aliceblue;">Profil</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#" style="color: aliceblue;">Prestasi</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="kontak.html" style="color: aliceblue;">Kontak</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link disabled" style="color: aliceblue;">Akademik</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link disabled" style="color: aliceblue;">Dosen</a>
-                    </li>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link"style="color:#fff;" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" style="color:#fff;" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Profil
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="sejarah.html">Sejarah</a></li>
+                      <li><a class="dropdown-item" href="visimisi.html">Visi dan Misi</a></li>
+                      <li><a class="dropdown-item" href="tujuan.html">Tujuan</a></li>
+                      <li><Sasaran class="dropdown-item" href="Sasaran.html">Sasaran</a></li>
+                      <li><Strategi class="dropdown-item" href="strategi.html">Strategi</a></li>
+                      <li><Akreditasi class="dropdown-item" href="akreditasi.html">Akreditasi</a></li>
+                      <li><Dosen class="dropdown-item" href="dosen1.html">Dosen</a></li>
+                      <li><Tenaga class="dropdown-item" href="tenagapen.html">Tenaga Kependidikan</a></li>
+                      <li><Lab. class="dropdown-item" href="lapjarkom.html">Lab. Komputer dan Jaringan</a></li>
+                      <li><Lab. class="dropdown-item" href="laprpl.html">Lab. Rekayasa Perangkat Lunak</a></li>
+                      
+                    </ul>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" style="color:#fff;" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Akademik
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="kurikulum.html">Kurikulum</a></li>
+                        <li><a class="dropdown-item" href="jadwalkuliah.html">Jadwal kuliah</a></li>
+                        <li><a class="dropdown-item" href="kalender.html">Kalender akademik</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" style="color:#fff;" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Sertifikasi
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="mikrotik.html">Mikrotik</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" style="color:#fff;" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Galeri
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="foto.html">Foto</a></li>
+                        <li><a class="dropdown-item" href="vidio.html">Video</a></li>
+                        <li><a class="dropdown-item" href="virtualTour.html">Virtual Tour</a></li>
+                        <li><a class="dropdown-item" href="kontak.html">Kontak</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" style="color:#fff;" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Kategori
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="#">Event</a></li>
+                        <li><a class="dropdown-item" href="CPrestasi.html">Prestasi Mahasiswa</a></li>
+                        <li><a class="dropdown-item" href="CBerita.html">Berita</a></li>
+                    </ul>
+                  </li>
                 </ul>
+              </div>
             </div>
-        </div>
-    </nav> 
+          </nav>
     
     
     <!-- slide gambar -->
