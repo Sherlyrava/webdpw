@@ -1,0 +1,273 @@
+.navbar {
+    background-color: #f8f9fa;
+  }
+
+  /* Warna latar belakang saat menu dihover */
+  .navbar-nav .nav-link:hover {
+    background-color: #0B2447;;
+    border-bottom: #eaeef2;
+  }
+
+  /* Warna teks aktif */
+  .navbar-nav .nav-link.active {
+    color: #007bff;
+  }
+
+  /* Warna latar belakang submenu */
+  .dropdown-menu {
+    background-color: #f8f9fa;;
+  }
+
+  /* Warna teks submenu */
+  .dropdown-menu .dropdown-item {
+    color: #0B2447;
+  }
+  .dropdown-toggle::after {
+      display: none;
+  }
+  @media (max-width: 992px) {
+    .navbar-toggler {
+      background-color: transparent;
+      border-color: #fff; /* Ganti dengan warna garis yang diinginkan */
+    }
+    .navbar-toggler-icon {
+      color: #0B2447; /* Ganti dengan warna garis yang diinginkan */
+    }
+  }
+
+@media (max-width: 990px) {
+  .kolom-2 {
+      display: none;
+  }
+}
+.kolom-grid {
+  padding: 10px 0;
+}
+a{
+  text-decoration: none;
+  color: black;
+  font-size: large;
+  font-weight: 500;
+}
+.btn-readmore {
+  display: inline-block;
+  background-color: #96CAD6;
+  color: #111B48;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  text-decoration: none;
+}
+
+  /* tambahan nav */
+  body {
+margin: 0;
+padding: 0;
+}
+
+.navbar {
+transition: background-color 0.3s;
+background-color: transparent;
+position: fixed;
+top: 0;
+width: 100%;
+z-index: 9999;
+}
+
+.navbar.scrolled {
+background-color: #0B2447;
+}
+
+.navbar .container {
+justify-content: flex-end;
+}
+
+.navbar-brand {
+color: #FFFFFF;
+font-size: 1.5rem;
+font-weight: 600;
+margin-right: auto;
+}
+
+.navbar-nav .nav-link {
+color: #FFFFFF;
+font-size: 0.875rem;
+margin-right: 1.5rem;
+}
+.fa-search:hover{
+  color: #46cb4a;
+}
+.text-center{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; text-align: center; color: #b96f6f; padding-top: 180pt; font-size: 3rem;
+
+  }
+  @media (max-width: 500px) {
+    .text-center{
+  padding-top: 80pt;
+  font-size: 2rem
+ }
+  }
+@media (max-width: 767px) {
+.navbar-collapse {
+  justify-content: flex-end;
+}
+
+.search-form {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  margin-top: 10px;
+}
+
+.search-input {
+  margin-right: 10px;
+}
+
+.navbar-nav {
+  text-align: right;
+}
+.navbar-brand img {
+width: 120px; /* Ubah ukuran lebar gambar logo */
+height: auto; /* Atur tinggi gambar logo secara otomatis */
+}
+
+.navbar-nav .nav-link {
+font-size: 0.75rem;
+/* Ubah ukuran font menu */
+}.text-center{
+    padding-top: 80pt;
+    font-size: 2rem
+  }
+}  
+
+/* JJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJ */
+/* CODINGAN ASLI */
+@media only screen and (min-width: 768px) {
+    .full-berita{
+        width: 100%;
+    }
+    .kolom-2 {
+        display: none;
+    }
+}
+.full-berita{
+    padding: 40px;
+}
+ .full-berita img{
+        display: block;
+    margin-left: auto;
+    margin-right: auto;
+    }
+    .full-berita p{
+        font-size: 16px;
+        color: #635757;
+    }
+
+/* FOOTER */
+
+.medsos ul li{
+    display:inline-block;
+    color: #fff;
+    margin-right: 3px;
+    display : inline-block; 
+}
+.medsos ul li a {
+    display:inline-block;
+    display : inline-block; 
+    color:white; 
+    font-size: 16px;
+}
+.social-media-icon{
+    padding-right: 10px;
+}
+.fa-twitter {
+    padding: 5px;
+    background:#fff;
+    color: #0B2447;
+    border-radius: 4px;
+    
+}
+.fa-youtube{
+    padding: 5px;
+    background:#fff;
+    color: #0B2447;
+    border-radius: 4px;
+}
+.fa-envelope{
+    padding: 5px;
+    background:#fff;
+    color: #0B2447;
+    border-radius: 4px;
+}
+.fa-instagram{
+    padding: 5px;
+    background:#fff;
+    color: #0B2447;
+    border-radius: 4px;
+} 
+a.social-media-icon:hover{
+    background: #fff!important;
+    color: #222!important;
+}
+
+a.social-media-icon:hover{
+    background:#fff;
+    color: #0B2447;
+}
+
+.footer-top{
+font-family: Arial, Helvetica, sans-serif;
+padding-top: 30px;
+padding-left: 0pt;
+background-color: #4e6b81;
+}
+.footer-top h2{
+    color: #ffffff;
+}
+.footer-top p{
+color: #fbfbfb;
+}
+
+.footer-top h2 {
+font-size: 18px;
+border-bottom: 2px solid #b1a7a7;
+line-height: 25pt;
+width: 180pt;
+position: relative;
+overflow: hidden;
+padding-top: 30px;
+}
+
+.footer-top h2::after {
+content: '';
+position: absolute;
+bottom: 0;
+left: 0;
+width: 100%;
+height: 1px;
+background-color: #c6bfbf;
+transform: translateX(-100%);
+animation: movingDots 4s linear infinite;
+}
+
+@keyframes movingDots {
+0% {
+transform: translateX(-100%);
+}
+100% {
+transform: translateX(100%);
+}
+}
+.footer-top a{
+color: #d4d7db;
+font-size: 16px;
+line-height: 2;
+}
+
+.footer-top a:hover{
+color: #ffffff;
+}
+
+.footer-top ul{
+list-style: none;
+padding-left: 0pt; 
+}    
