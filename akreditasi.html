@@ -161,6 +161,249 @@
             max-height: 100%;
         }
 
+         /* style after */
+         @media (max-width: 768px) {
+        .video-container {
+            padding-bottom: 5%;
+        }
+    }
+
+    .navbar {
+          background-color: #f8f9fa;
+        }
+      
+        /* Warna latar belakang saat menu dihover */
+        .navbar-nav .nav-link:hover {
+          background-color: #0B2447;;
+          border-bottom: #eaeef2;
+        }
+      
+        /* Warna teks aktif */
+        .navbar-nav .nav-link.active {
+          color: #007bff;
+        }
+      
+        /* Warna latar belakang submenu */
+        .dropdown-menu {
+          background-color: #f8f9fa;;
+        }
+      
+        /* Warna teks submenu */
+        .dropdown-menu .dropdown-item {
+          color: #0B2447;
+        }
+        .dropdown-toggle::after {
+            display: none;
+        }
+       /* Warna latar belakang tombol menu menjadi transparan ketika ditampilkan secara mobile */
+  @media (max-width: 992px) {
+    .navbar-toggler {
+      background-color: transparent;
+      border-color: #fff; /* Ganti dengan warna garis yang diinginkan */
+    }
+    .navbar-toggler-icon {
+      color: #0B2447; /* Ganti dengan warna garis yang diinginkan */
+    }
+  }
+
+
+    @media (max-width: 990px) {
+        .kolom-2 {
+            display: none;
+        }
+    }
+    .kolom-grid {
+        padding: 10px 0;
+    }
+    a{
+        text-decoration: none;
+        color: black;
+        font-size: large;
+        font-weight: 500;
+    }
+    .btn-readmore {
+        display: inline-block;
+        background-color: #96CAD6;
+        color: #111B48;
+        padding: 0.5rem 1rem;
+        border-radius: 0.25rem;
+        text-decoration: none;
+    }
+    .medsos ul li{
+            display:inline-block;
+            color: #fff;
+            margin-right: 3px;
+            display : inline-block; 
+        }
+        .medsos ul li a {
+            display:inline-block;
+            display : inline-block; 
+            color:white; 
+            font-size: 16px;
+        }
+        .social-media-icon{
+            padding-right: 10px;
+        }
+        .fa-twitter {
+            padding: 5px;
+            background:#fff;
+            color: #0B2447;
+            border-radius: 4px;
+            
+        }
+        .fa-youtube{
+            padding: 5px;
+            background:#fff;
+            color: #0B2447;
+            border-radius: 4px;
+        }
+        .fa-envelope{
+            padding: 5px;
+            background:#fff;
+            color: #0B2447;
+            border-radius: 4px;
+        }
+        .fa-instagram{
+            padding: 5px;
+            background:#fff;
+            color: #0B2447;
+            border-radius: 4px;
+        } 
+        a.social-media-icon:hover{
+            background: #fff!important;
+            color: #222!important;
+        }
+
+        a.social-media-icon:hover{
+            background:#fff;
+            color: #0B2447;
+        }
+       
+        .footer-top{
+        font-family: Arial, Helvetica, sans-serif;
+        padding-top: 30px;
+        padding-left: 0pt;
+        background-color: #4e6b81;
+        
+       }
+       .footer-top p{
+        color: #fbfbfb;
+       }
+
+       .footer-top h2 {
+    font-size: 18px;
+    border-bottom: 2px solid #b1a7a7;
+    line-height: 25pt;
+    width: 180pt;
+    position: relative;
+    overflow: hidden;
+    padding-top: 30px;
+  }
+
+  .footer-top h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #c6bfbf;
+    transform: translateX(-100%);
+    animation: movingDots 4s linear infinite;
+  }
+
+  @keyframes movingDots {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(100%);
+    }
+  }
+       .footer-top a{
+        color: #d4d7db;
+        font-size: 16px;
+        line-height: 2;
+       }
+       
+       .footer-top a:hover{
+        color: #ffffff;
+       }
+      
+       .footer-top ul{
+        list-style: none;
+        padding-left: 0pt; 
+       }
+
+        /* tambahan nav */
+        body {
+      margin: 0;
+      padding: 0;
+    }
+
+    .navbar {
+      transition: background-color 0.3s;
+      background-color: transparent;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 9999;
+    }
+
+    .navbar.scrolled {
+      background-color: #0B2447;
+    }
+
+    .navbar .container {
+      justify-content: flex-end;
+    }
+
+    .navbar-brand {
+      color: #FFFFFF;
+      font-size: 1.5rem;
+      font-weight: 600;
+      margin-right: auto;
+    }
+
+
+    .navbar-nav .nav-link {
+      color: #FFFFFF;
+      font-size: 0.875rem;
+      margin-right: 1.5rem;
+    }
+    .fa-search:hover{
+        color: #46cb4a;
+    }
+    @media (max-width: 767px) {
+      .navbar-collapse {
+        justify-content: flex-end;
+      }
+
+      .search-form {
+        display: flex;
+        align-items: center;
+        margin-left: auto;
+        margin-top: 10px;
+      }
+
+      .search-input {
+        margin-right: 10px;
+      }
+
+      .navbar-nav {
+        text-align: right;
+      }
+      .navbar-brand img {
+    width: 120px; /* Ubah ukuran lebar gambar logo */
+    height: auto; /* Atur tinggi gambar logo secara otomatis */
+  }
+
+  .navbar-nav .nav-link {
+    font-size: 0.75rem;
+     /* Ubah ukuran font menu */
+  }
+    }
+
           
     </style>
 </head>
