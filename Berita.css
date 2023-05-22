@@ -1,12 +1,53 @@
-@media only screen and (min-width: 768px) {
-    .full-berita{
-        width: 100%;
+@media (max-width: 768px) {
+    .video-container {
+        padding-bottom: 5%;
     }
+}
+
+.navbar {
+      background-color: #f8f9fa;
+    }
+  
+    /* Warna latar belakang saat menu dihover */
+    .navbar-nav .nav-link:hover {
+      background-color: #0B2447;;
+      border-bottom: #eaeef2;
+    }
+  
+    /* Warna teks aktif */
+    .navbar-nav .nav-link.active {
+      color: #007bff;
+    }
+  
+    /* Warna latar belakang submenu */
+    .dropdown-menu {
+      background-color: #f8f9fa;;
+    }
+  
+    /* Warna teks submenu */
+    .dropdown-menu .dropdown-item {
+      color: #0B2447;
+    }
+    .dropdown-toggle::after {
+        display: none;
+    }
+   /* Warna latar belakang tombol menu menjadi transparan ketika ditampilkan secara mobile */
+@media (max-width: 992px) {
+.navbar-toggler {
+  background-color: transparent;
+  border-color: #fff; /* Ganti dengan warna garis yang diinginkan */
+}
+.navbar-toggler-icon {
+  color: #0B2447; /* Ganti dengan warna garis yang diinginkan */
+}
+}
+
+
+@media (max-width: 990px) {
     .kolom-2 {
         display: none;
     }
 }
-
 .kolom-grid {
     padding: 10px 0;
 }
@@ -41,52 +82,164 @@ a{
     }
     .fa-twitter {
         padding: 5px;
-        background:#383737;
-        color: #fff;
+        background:#fff;
+        color: #0B2447;
         border-radius: 4px;
         
     }
     .fa-youtube{
         padding: 5px;
-        background:#383737;
-        color: #fff;
-        border-radius: 4px;
-    }
-    .fa-instagram{
-        padding: 5px;
-        background:#383737;
-        color: #fff;
+        background:#fff;
+        color: #0B2447;
         border-radius: 4px;
     }
     .fa-envelope{
         padding: 5px;
-        background:#383737;
-        color: #fff;
+        background:#fff;
+        color: #0B2447;
         border-radius: 4px;
     }
+    .fa-instagram{
+        padding: 5px;
+        background:#fff;
+        color: #0B2447;
+        border-radius: 4px;
+    } 
     a.social-media-icon:hover{
         background: #fff!important;
-        color: #383737!important;
+        color: #222!important;
     }
 
-    .full-berita{
-        padding: 40px;
+    a.social-media-icon:hover{
+        background:#fff;
+        color: #0B2447;
     }
+   
+    .footer-top{
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 30px;
+    padding-left: 0pt;
+    background-color: #4e6b81;
+    
+   }
+   .footer-top p{
+    color: #fbfbfb;
+   }
 
-    .full-berita img{
-        display: block;
+   .footer-top h2 {
+font-size: 18px;
+border-bottom: 2px solid #b1a7a7;
+line-height: 25pt;
+width: 180pt;
+position: relative;
+overflow: hidden;
+padding-top: 30px;
+}
+
+.footer-top h2::after {
+content: '';
+position: absolute;
+bottom: 0;
+left: 0;
+width: 100%;
+height: 1px;
+background-color: #c6bfbf;
+transform: translateX(-100%);
+animation: movingDots 4s linear infinite;
+}
+
+@keyframes movingDots {
+0% {
+  transform: translateX(-100%);
+}
+100% {
+  transform: translateX(100%);
+}
+}
+   .footer-top a{
+    color: #d4d7db;
+    font-size: 16px;
+    line-height: 2;
+   }
+   
+   .footer-top a:hover{
+    color: #ffffff;
+   }
+  
+   .footer-top ul{
+    list-style: none;
+    padding-left: 0pt; 
+   }
+
+    /* tambahan nav */
+    body {
+  margin: 0;
+  padding: 0;
+}
+.text-center{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; text-align: center; color: #b96f6f; padding-top: 180pt; font-size: 3rem;
+
+  }
+
+.navbar {
+  transition: background-color 0.3s;
+  background-color: transparent;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 9999;
+}
+
+.navbar.scrolled {
+  background-color: #0B2447;
+}
+
+.navbar .container {
+  justify-content: flex-end;
+}
+
+.navbar-brand {
+  color: #FFFFFF;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-right: auto;
+}
+
+
+.navbar-nav .nav-link {
+  color: #FFFFFF;
+  font-size: 0.875rem;
+  margin-right: 1.5rem;
+}
+.fa-search:hover{
+    color: #46cb4a;
+}
+@media (max-width: 767px) {
+  .navbar-collapse {
+    justify-content: flex-end;
+  }
+
+  .search-form {
+    display: flex;
+    align-items: center;
     margin-left: auto;
-    margin-right: auto;
-    }
-    .full-berita p{
-        font-size: 16px;
-        color: #635757;
-    }
+    margin-top: 10px;
+  }
 
-    footer p{
-        font-family: Arial, Helvetica, sans-serif;
-    }
+  .search-input {
+    margin-right: 10px;
+  }
 
-    .medsos p{
-        font-family: Arial, Helvetica, sans-serif;
-    }
+  .navbar-nav {
+    text-align: right;
+  }
+  .navbar-brand img {
+width: 120px; /* Ubah ukuran lebar gambar logo */
+height: auto; /* Atur tinggi gambar logo secara otomatis */
+}
+
+.navbar-nav .nav-link {
+font-size: 0.75rem;
+ /* Ubah ukuran font menu */
+}
+}
