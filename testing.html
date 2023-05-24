@@ -7,220 +7,155 @@
     <title>TEKNIK INFORMATIKA UNRI</title>
     <link rel="stylesheet" href="bootstrap-5.2.3-dist/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
-    
-  
+    <link rel="stylesheet" href="Berita.css">
+    <!-- <link rel="stylesheet" href="Berita.css"> -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="stylesheet" href="cat1.css">
     <style>
-    @media (max-width: 990px) {
-        .kolom-2 {
-            display: none;
+      body {
+          margin: 0;
+          padding: 0;
+      }
+
+      .header {
+          background-image: url("Aset/a.png");
+          background-size: cover;
+          background-position: center;
+          height: 300px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          text-align: center;
+          overflow: hidden;
+      }
+
+      h1 {
+          color: black;
+          font-size: 40px;
+          text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+      }
+      @media only screen and (min-width: 768px) {
+        .cin{
+            clear: both;
         }
     }
-    .kolom-grid {
-        padding: 10px 0;
-    }
-    a{
-        text-decoration: none;
-        color: black;
-        font-size: large;
-        font-weight: 500;
-    }
-    .btn-readmore {
-        display: inline-block;
-        background-color: #96CAD6;
-        color: #111B48;
-        padding: 0.5rem 1rem;
-        border-radius: 0.25rem;
-        text-decoration: none;
-    }
-    .medsos ul li{
-            display:inline-block;
-            color: #fff;
-            margin-right: 3px;
-            display : inline-block; 
-        }
-        .medsos ul li a {
-            display:inline-block;
-            display : inline-block; 
-            color:white; 
-            font-size: 16px;
-        }
-        .social-media-icon{
-            padding-right: 10px;
-        }
-        .fa-twitter {
-            padding: 5px;
-            background:rgb(67, 153, 228);
-            color: #fff;
-            border-radius: 4px;
-            
-        }
-        .fa-youtube{
-            padding: 5px;
-            background:rgb(253, 12, 12);
-            color: #fff;
-            border-radius: 4px;
-        }
-        .fa-instagram{
-            padding: 5px;
-            background:rgb(253, 12, 201);
-            color: #fff;
-            border-radius: 4px;
-        }
-        .fa-envelope{
-            padding: 5px;
-            background:rgb(253, 100, 12);
-            color: #fff;
-            border-radius: 4px;
-        }
-        a.social-media-icon:hover{
-            background: #fff!important;
-            color: #222!important;
-        }
-        .title {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-h1 {
-  text-align: center;
-  font-size: 2rem;
-  font-weight: bold;
-  margin: 0 20px;
-}
-
-.left, .right {
-  flex: 10;
-  height: 10px;
-  background-color: #c15c5c;
-  margin: 0 10px;
-}
-
-.content {
-  width: 100%;
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 20px;
-}
-
-.member {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: 20px;
-}
-
-.member img {
-  width: 250px;
-  height: 250px;
-  border-radius: 50%;
-  margin-bottom: 10px;
-}
-
-.member h2 {
-  margin: 0;
-  display: flex;
-  align-items: center;
-}
-
-.member-details {
-    flex-grow: 1;
-    position: relative;
-}
-.member-details h3 {
-  display: inline-block;
-}
-.member-details h3::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: -2px;
-  width: 100%;
-  height: 2px;
-  background-color: blue; /* Ganti 'blue' dengan warna yang diinginkan */
-  transform: scaleX(0);
-  transition: transform 0.3s ease;
-}
-.member-details h3:hover::after {
-  transform: scaleX(1);
-}
-
-.underline {
-  height: 2px;
-  display: inline-block;
-  background-color: blue; /* Ganti 'blue' dengan warna yang diinginkan */
-  width: 50%; /* Ganti '80%' dengan panjang yang diinginkan, seperti '200px' atau '50%' */
-  margin-bottom: 10px; /* Ganti '10px' dengan ruang tambahan di bawah garis bawah */
-}
-.member p {
-  margin: 5px 0;
-}
-
-
-
-    </style>
+  </style>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script>
+      $(document).ready(function() {
+          $(window).scroll(function() {
+              var scrollTop = $(window).scrollTop();
+              $(".card").css("transform", "translateY(" + (scrollTop / 2) + "px)");
+          });
+      });
+  </script>
 </head>
 <body style="font-family: poppins;">
     <!-- logo dan search -->
-    <script src="bootstrap-5.2.3-dist/js/bootstrap.bundle.min.js"></script>     
-    <nav class="navbar navbar-expand-lg bg-light" >
-        <div class="container-fluid" style="background-color: #fff;">
+    <script src="bootstrap-5.2.3-dist/js/bootstrap.bundle.min.js"></script>       
+    <script src="bootstrap/bootstrap-5.2.3-dist/js/bootstrap.bundle.js"></script>     
+    <script>
+      window.addEventListener('scroll', function() {
+        const navbar = document.querySelector('.navbar');
+        navbar.classList.toggle('scrolled', window.scrollY > 0);
+      });     
+    </script>     
+    <nav class="navbar navbar-expand-lg">
+       
+      <!-- <div class="container"> -->
           <a class="navbar-brand" href="#">
-            <img src="Aset/LogoUnri.png" style="padding-left: 30px;" alt="">
-            <img src="Aset/S1TI.png" style="padding-left: 30px;" alt="">
-          </a>
-            <form class="d-flex" role="search" >
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline" style="background-color:#005aab; color: #fff;"  type="submit">Search</button>
-            </form>
+              <img src="Aset/S1 TEKNIK INFORMATIKA (2).png" style="padding-left: 30px;" alt="">
+            </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="container">
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" style="color:#fff;" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Profil
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="sejarah.html">Sejarah</a></li>
+                  <li><a class="dropdown-item" href="visimisi.html">Visi dan Misi</a></li>
+                  <li><a class="dropdown-item" href="tujuan.html">Tujuan</a></li>
+                  <li><a class="dropdown-item" href="Sasaran.html">Sasaran</a></li>
+                  <li><a class="dropdown-item" href="strategi.html">Strategi</a></li>
+                  <li><a class="dropdown-item" href="akreditasi.html">Akreditasi</a></li>
+                  <li><a class="dropdown-item" href="dosen1.html">Dosen</a></li>
+                  <li><a class="dropdown-item" href="tenagapen.html">Tenaga kependidikan</a></li>
+                  <li><a class="dropdown-item" href="lapjarkom.html">Lab. Komputer dan Jaringan</a></li>
+                  <li><a class="dropdown-item" href="laprpl.html">Lab. Rekayasa Perangkat Lunak</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" style="color:#fff;" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Akademik
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="kurikulum.html">Kurikulum</a></li>
+                  <li><a class="dropdown-item" href="jadwalkuliah.html">Jadwal kuliah</a></li>
+                  <li><a class="dropdown-item" href="kalender.html">Kalender akademik</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" style="color:#fff;" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Sertifikasi
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="mikrotik.html">Mikrotik</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" style="color:#fff;" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Galeri
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="foto.html">Foto</a></li>
+                  <li><a class="dropdown-item" href="vidio.html">Video</a></li>
+                  <li><a class="dropdown-item" href="virtualTour.html">Virtual Tour</a></li>
+                  <li><a class="dropdown-item" href="kontak.html">Kontak</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" style="color:#fff;" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Kategori
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="CEvent.html">Event</a></li>
+                  <li><a class="dropdown-item" href="CPrestasi.html">Prestasi Mahasiswa</a></li>
+                  <li><a class="dropdown-item" href="CBerita.html">Berita</a></li>
+                  <li><a class="dropdown-item" href="CPoster.html">Poster</a></li>
+              </ul>
+            </li>
+            <div class="search-form">
+              <button class="btn btn-link search-button" type="submit">
+                  <i class="fas fa-search search-icon" style="color: #eaeef2;"></i>
+                </button>
           </div>
-      </nav>
-    
-    <!-- navbar -->
-    <div class="sticky-top">
-    <nav class="navbar navbar-expand-lg " style="background-color:#005aab;" >
-        <div class="container-fluid" >  
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#" style="color: aliceblue;">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#" style="color: aliceblue;">Profil</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#" style="color: aliceblue;">Prestasi</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="kontak.html" style="color: aliceblue;">Kontak</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link disabled" style="color: aliceblue;">Akademik</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link disabled" style="color: aliceblue;">Dosen</a>
-                    </li>
-                </ul>
-            </div>
+          </ul>
+         
         </div>
-    </nav> 
-    </div>
-
-      
-    <!-- slide gambar -->
+  
+        </div>
+      </div>
+    </nav>
+    
+    <!-- slide gambar -->  
     <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img src="Aset/gambar1.jpg" class="d-block w-100" alt="...">
+                <img src="Aset/gambarCover1.png" class="d-block w-100 " alt="...">
             </div>
             <div class="carousel-item">
-                <img src="Aset/gambar2.jpg" class="d-block w-100" alt="...">
+                <img src="Aset/gambarCover2.png" class="d-block w-100" alt="...">
             </div>
             <div class="carousel-item">
-                <img src="Aset/gambar3.jpg" class="d-block w-100" alt="...">
+                <img src="Aset/gambarCover3.png" class="d-block w-100" alt="...">
             </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
@@ -233,201 +168,384 @@ h1 {
         </button>
       </div>
 
-      <div class="title">
-        <hr class="left">
-        <h1>2022</h1>
-        <hr class="right">
-      </div>
-      
-      <!-- menu navigasi dibawah gambar -->
       <!-- menu navigasi dibawah gambar -->
       <header>
         <div class="container">
             <div class="row" >
-            <div class="col1 col-md-4 col-xs-4" >
-                    <a class="nav-link" href="#" style="color: #fff; background-color: #48a40f; text-align: center; font-size: 20pt; "><b>Akreditasi</b></a>
-            </div>
-            <div class="col2 col-md-4 col-xs-4">
-                <a class="nav-link" href="#" style="color: #fff; background-color: #48a40f; text-align: center;">Sertifikasi</a>
-            </div>
-            <div class="col3 col-md-4 col-xs-4">
-                    <a class="nav-link" href="virtualTour.html" style="color: #fff; background-color: #48a40f; text-align: center;">Dokumentasi</a>
-            </div>
+              <div class="col1 col-md-4 col-xs-4" >
+                      <a class="nav-link" href="akreditasi.html" style="color: #fff; background-color: #111B48; text-align: center;">Akreditasi</a>
+              </div>
+              <div class="col2 col-md-4 col-xs-4">
+                  <a class="nav-link" href="mikrotik.html" style="color: #fff; background-color: #111B48; text-align: center;">Sertifikasi</a>
+              </div>
+              <div class="col3 col-md-4 col-xs-4">
+                      <a class="nav-link" href="virtualTour.html" style="color: #fff; background-color: #111B48; text-align: center;">Dokumentasi</a>
+              </div>
+          </div>
         </div>
-        
 
-                <div class="row" style="padding-top: 50pt;" >
-                <div class="col1 col-md-4 col-xs-4" >
-                    <h2 style="border-bottom: 2px solid rgb(0, 128, 0); line-height: 50pt; width: 330pt; font-family: poppin; padding-top: 13pt;" ></h2>
-                </div>
-                <div class="col2 col-md-4 col-xs-4">
-                    <a href=""><h2 style="text-align: center;"> Koordinator Prodi</h2></a>
-                </div>
-                <div class="col3 col-md-4 col-xs-4">
-                     <h2 style="border-bottom: 2px solid rgb(0, 128, 0); line-height: 50pt; width: 330pt; font-family: poppin; padding-top: 13pt;" ></h2>
-                </div>
-
-                <div class="content">
-                   
-                    <div class="member">
-                      <img src="http://informatika.ft.unri.ac.id/wp-content/uploads/pp-fc.jpg" alt="Nama Anggota">
-                      <h2 style="border-bottom: 3px solid rgb(0, 128, 0); line-height:40pt; width: 30pt; font-family: poppin; padding-top: 13pt; text-align: center;" >Jabatan</h2>
-                      <div class="member-details">
-                        <div class="underline"></div>
-                        <p>Jabatan dan Deskripsi Anggota</p>
-                      </div>
+        <!-- heere -->
+        <section class="section-one-card">
+            <div class="container">
+              <div class="widget-wrap">
+                <div class="ti-card">
+                  <!-- Konten untuk ti-card -->
+                  <div class="widget">
+                    <div class="widget-container">
+                      <h1 class="heading-title">
+                        TEKNIK INFORMATIKA
+                      </h1>
                     </div>
-                    
-                    <!-- Tambahkan div member untuk anggota lainnya -->
                   </div>
-                  
-        <!-- Berita terkini -->
-            <div class="row" >
+                  <div class="widget">
+                    <div class="widget-container">
+                      <h2 class="heading">
+                        Program Studi Teknik Informatika merupakan  <br> salah satu program studi sarjana yang ada di Universitas Riau yang memiliki <br> 3 konsentrasi ungul              </h2>
+                    </div>
+                  </div>
+          
+                  <div class="image-grid">
+                    <div class="grid-item">
+                      <img src="Aset/kcv.png" alt="Image 1" style="height: 80; width: 100;">
+                    </div>
+                    <div class="grid-item">
+                    <img src="Aset/rpl.png" alt="Image 1">
+                    </div>
+                    <div class="grid-item">
+                      <img src="Aset/kbj.png" alt="Image 1">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <script>
+            // Ambil elemen grid-item pada ti-card
+            const gridItem = document.querySelectorAll('.ti-card .grid-item');
+          
+            // Fungsi untuk menambahkan kelas animation-visible ke grid-item saat grid-item masuk viewport
+            function showGridItem() {
+              gridItem.forEach((gridItem) => {
+                if (isElementInViewport(gridItem)) {
+                  gridItem.classList.add('animation-visible');
+                }
+              });
+          
+              // Hapus event listener setelah semua grid-item muncul
+              if (Array.from(gridItem).every((gridItem) => gridItem.classList.contains('animation-visible'))) {
+                window.removeEventListener('scroll', showGridItem);
+              }
+            }
+          
+            // Fungsi untuk memeriksa apakah elemen berada di dalam viewport
+            function isElementInViewport(element) {
+              const rect = element.getBoundingClientRect();
+              return (
+                rect.top >= 0 &&
+                rect.left >= 0 &&
+                rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+                rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+              );
+            }
+          
+            // Tambahkan event listener saat melakukan scroll untuk memicu animasi grid-item
+            window.addEventListener('scroll', showGridItems);
+          </script>
+
+        <section class="elementor-section section-my-card">
+          <div class="elementor-container">
+            <div class="elementor-widget-wrap">
+              <div class="my-card">
+                <!-- Konten untuk my-card -->
+                <div class="elementor-widget">
+                  <div class="elementor-widget-container">
+                    <h1 class="elementor-heading-title">
+                      Menuju Teknik Informatika <br> Berkelas Dunia
+                    </h1>
+                  </div>
+                </div>
+                <div class="elementor-widget">
+                  <div class="elementor-widget-container">
+                    <h2 class="elementor-heading">
+                      Menjadi Program Studi Teknik Informatika<br> Terkemuka Berbasis Riset dan Teknologi yang Bermartabat di Kawasan <br> Asia Tenggara pada Tahun 2035.
+                    </h2>
+                  </div>
+                </div>
+                <div class="elementor-widget">
+                  <div class="elementor-widget-container">
+                    <a href="/profil/" class="elementor-button-link elementor-button elementor-size-sm" role="button">
+                      <span class="elementor-button-content-wrapper">
+                        <span class="elementor-button-text">Visi Misi</span>
+                      </span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+             
+      <script>
+        // Ambil elemen card
+        const cards = document.querySelectorAll('.my-card');
+      
+        // Fungsi untuk menambahkan kelas animation-visible ke card saat card masuk viewport
+        function showCard() {
+          cards.forEach((card) => {
+            if (isElementInViewport(card)) {
+              card.classList.add('animation-visible');
+            }
+          });
+      
+          // Hapus event listener setelah semua card muncul
+          if (Array.from(cards).every((card) => card.classList.contains('animation-visible'))) {
+            window.removeEventListener('scroll', showCard);
+          }
+        }
+      
+        // Fungsi untuk memeriksa apakah elemen berada di dalam viewport
+        function isElementInViewport(element) {
+          const rect = element.getBoundingClientRect();
+          return (
+            rect.top >= 0 &&
+            rect.left >= 0 &&
+            rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+            rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+          );
+        }
+      
+        // Tambahkan event listener saat melakukan scroll untuk memicu animasi card
+        window.addEventListener('scroll', showCard);
+      </script>
+        
+        <section class="section-two-card">
+          <div class="container">
+            <div class="widget-wrap">
+              <div class="ti-card">
+                <!-- Konten untuk ti-card -->
+                <div class="widget">
+                  <div class="widget-container">
+                    <h1 class="heading-title">
+                      Perkembangan Kampus
+                    </h1>
+                  </div>
+                </div>
+                <div class="widget">
+                  <div class="widget-container">
+                    <h2 class="heading">
+                      Sebagai salah satu program Studi unggulan, Teknik Informatika aktif dalam berbagai aspek
+                      penting dalam menjawab berbagai tantangan untuk mendorong
+                      kemajuan bangsa                     </h2>
+                  </div>
+                </div>
+        
+                <div class="image-grid">
+                  <div class="grid-item">
+                    <a href="CPrestasi.html"><img src="Aset/pres.png" alt="Image 1" style="height: 80; width: 100;"> </a> 
+                  </div>
+                  <div class="grid-item">
+                    <a href="CEvent.html"><img src="Aset/event.png" alt="Image 1"></a> 
+                  </div>
+                  <div class="grid-item">
+                    <a href="CPoster.html"><img src="Aset/poster.png" alt="Image 1"></a> 
+                  </div>
+                 
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        
+        <script>
+          // Ambil elemen grid-item pada ti-card
+          const gridItems = document.querySelectorAll('.ti-card .grid-item');
+        
+          // Fungsi untuk menambahkan kelas animation-visible ke grid-item saat grid-item masuk viewport
+          function showGridItems() {
+            gridItems.forEach((gridItem) => {
+              if (isElementInViewport(gridItem)) {
+                gridItem.classList.add('animation-visible');
+              }
+            });
+        
+            // Hapus event listener setelah semua grid-item muncul
+            if (Array.from(gridItems).every((gridItem) => gridItem.classList.contains('animation-visible'))) {
+              window.removeEventListener('scroll', showGridItems);
+            }
+          }
+        
+          // Fungsi untuk memeriksa apakah elemen berada di dalam viewport
+          function isElementInViewport(element) {
+            const rect = element.getBoundingClientRect();
+            return (
+              rect.top >= 0 &&
+              rect.left >= 0 &&
+              rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+              rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+            );
+          }
+        
+          // Tambahkan event listener saat melakukan scroll untuk memicu animasi grid-item
+          window.addEventListener('scroll', showGridItems);
+        </script>
+        
+      
+      <!-- FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.5.0/js/bootstrap.bundle.min.js"></script> 
+      <!-- Berita terkini -->
+      <div class="pt-4 news-now">
+        <h3 style="font-weight: bold; font-size: 22px;padding-bottom: 5pt; border-bottom: 2px solid #3c8d6d;">BERITA TERKINI</h3>
+        <div class="row" style="padding-top: 30pt;">
             <div class="col-md-6" >
-                <img src="https://informatika.ft.unri.ac.id/wp-content/uploads/Prof-Azriyenni.jpg" style="width: 20px;" class="d-block w-100" alt="...">    
+              <img src="https://informatika.ft.unri.ac.id/wp-content/uploads/Prof-Azriyenni.jpg" class="d-block H-50 img-fluid smaller-image" style="height: 300; padding-left: 50PT;" alt="...">
             </div>
-            <div class="col-md-6">
-                <h4>Prof. Dr. Azriyenni, ST, M.Eng, Guru Besar pertama Teknik Elektro</h4>
-                <p>Prof. Dr. Azriyenni, ST, M.Eng merupakan Guru Besar pertama bidang Teknik Elektro di Riau. Azriyenni dikukuhkan sebagai Guru Besar dalam Bidang Ilmu Transmisi dan Distribusi Tenaga Listrik pada Fakultas Teknik Universitas Riau, Selasa (14/6/2022). Dengan demikian dia menjadi profesor kelistrikan pertama di Riau. “Ibu Azriyenni ini adalah orang yang pertama menjadi Guru Besar di bidang kelistrikan di Riau,” ujar Rektor Unri, Prof. Dr. Aras Mulyadi, DEA usai acara pengukuhan di gedung rektorat Kampus Bina Widya. </p>
-                <p>Dalam orasinya, Prof Azriyenni menyampaikan bahwa kontinuitas penyaluran daya listrik sering dihadapkan pada masalah gangguan yang timbul dalam sistem tenaga listrik. Karena itu, estimasi gangguan pada saluran transmisi tenaga listrik sangat penting untuk mempercepat proses perbaikan. “Perbaikan yang cepat akan mengurangi keluhan pelanggan,” jelasnya. Faktor-faktor tersebut, ungkap Azriyenni, semakin penting bagi perusahaan penyedia energi listrik dalam menghadapi tantangan</p>
-                    <a href="berita1.html" class="btn-readmore">Read More</a>
+            <div class="col-md-6" style="padding-right: 50pt;">
+                <h4 style="line-height: 1,9;">Prof. Dr. Azriyenni, ST, M.Eng, Guru Besar Pertama Teknik Elektro</h4>
+                <time datetime="2023-06-01">1 Juni 2023</time> <br>
+                <p style="line-height: 1.9;">Prof. Dr. Azriyenni, ST, M.Eng merupakan Guru Besar pertama bidang Teknik Elektro di Riau. Azriyenni dikukuhkan sebagai Guru Besar dalam Bidang Ilmu Transmisi dan Distribusi Tenaga Listrik pada Fakultas Teknik Universitas Riau, Selasa (14/6/2022). Dengan demikian dia menjadi profesor kelistrikan pertama di Riau. “Ibu Azriyenni ini adalah orang yang pertama menjadi Guru Besar di bidang kelistrikan di Riau,” ujar Rektor Unri, Prof. Dr. Aras Mulyadi, DEA usai acara pengukuhan di gedung rektorat Kampus Bina Widya. </p>
+                <p style="line-height: 1.9;">Dalam orasinya, Prof Azriyenni menyampaikan bahwa kontinuitas penyaluran daya listrik sering dihadapkan pada masalah gangguan yang timbul dalam sistem tenaga listrik.</p>
+                <br><button class="btn btn-primary">Read More</button>  
+                <!-- <a href="berita1.html" class="btn-readmore">Read More</a> -->
             </div>
-                </div>
-                <hr style="width: 100%; color: black;">
+        </div>
+        <!-- <hr style="width: 100%; color: black;"> -->
+    </div>
+
+      <!-- Berita Terkait -->
+      <div class="Terkait pt-4 related-news" style="padding: 40px; padding-left: 80pt;padding-right: 80pt;">
+        <h3 style=" font-weight: bold; font-size: 22px; border-bottom: 2px solid #3c8d6d;">Berita Terkait</h3>
+        <div class="row">
+            <div class="col-md-4" style="padding: 20px;">
+              <a href="CB2.html"><img src="Aset/B2.jpg" class="d-block w-100 img-fluid" alt="..."></a>
+              <time datetime="2023-06-01">15 JUNE 2022</time> <br>
+              <a href="CB2.html">Prof Azriyenni Guru Besar Teknik Elektro Pertama di Riau</a>
             </div>
-
-        <!-- Berita Terkait -->
-        <div class="container pt-4" style="padding-top:50px ;"></br>
-            <h3 style="text-align: center;">Berita Terkait</h3>
-                <div class="row">
-                <div class="col-md-3" style="padding-top: 20px;">
-                    <a href="#"><img src="Aset/Screenshot 2023-03-20 202819.png" class="d-block w-100" alt="..."></a>
-                    <a href="#">[EVENT] WEBINAR : How to Create a Project/Research Poster</a>
-                </div>
-                <div class="col-md-3" style="padding-top: 20px;">
-                    <a href="#"><img src="Aset/photo_2022-08-05_13-32-09-800x450.jpg" class="d-block w-100" alt="..."></a>
-                    <a href="#">[EVENT] Orientasi Program FGA DTS 2022</a>
-                </div>
-                <div class="col-md-3" style="padding-top: 20px;">
-                    <a href="#"><img src="Aset/Screenshot 2023-03-21 053114.png" class="d-block w-100" alt="..."></a>
-                    <a href="#">[Event] KULIAH UMUM : Data Analytics for Health Sector</a>
-                </div>
-                <div class="col-md-3" style="padding-top: 20px;">
-                    <a href="Aset/gambar1.jpg"><img src="Aset/Prof_AZ.jpg" class="d-block w-100" alt="..."></a>
-                    <a href="#">Prof Azriyenni Guru Besar Teknik Elektro Pertama di Riau</a>
+            <div class="col-md-4" style="padding: 20px;">
+                <a href="CB1.html"><img src="Aset/B11.png" class="d-block w-100 img-fluid" alt="..."></a>
+                <time datetime="2023-06-01">21 JULY 2021</time> <br>
+                <a href="CB1.html">Ani Mardhatillah, mahasiswa Teknik Informatika Juara 1 Lomba MTQ Kecamatan</a>
+            </div>
+            <div class="col-md-4" style="padding: 20px;">
+                <a href="CB3.html"><img src="Aset/B3.jpg" class="d-block w-100 img-fluid" alt="..."></a>
+                <time datetime="2023-06-01">21 JULY 2021</time> <br>
+                <a href="CB3.html">Dr. Irsan Taufik Ali, ST., MT dosen Prodi Teknik Informatika meraih gelar Doktor di bidang Deep Learning.</a>
+            </div>
         </div>
+    </div>
 
-        <!-- kartu -->
-        <div class="container pt-5 " style="text-align: center;"  >
-            <div style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
-                <hr style="width: 80%; color: black;"></br>
-                <h3 style="text-align: center;" >Informasi Terbaru</h3></br>
-              </div>
-                <div class="row">
-                <!-- Event -->
-                <div class="col-md-4" style="background-color: #96CAD6; color: #111B48; padding-right: 30px;">
-                </br><h4>Event</h4>
-                    <a href="Aset/Event(1).png" >
-                        <img src="Aset/Event .png" alt="..." style="text-align: center;"></br>
-                    </a><br>
-                    <a href="#" style="color: #111B48;">Kuliah Umum:</br>Data Analystics for Healt Sector </a><br></br>
-                    <a href="#" class="btn-readmore " style="background-color: #111B48; color: #96CAD6;">Read More</a></br><br>
-                </div>
-
-                <!-- Beasiswa -->
-                </br><div class="col-md-4" style="background-color: #111B48; color: aliceblue;">
-                </br><h4>Beasiswa</h4>
-                    <a href="#"><img src="Aset/beasiswa1.png" alt="..." style="text-align: center;"></a></br></br>
-                    <a href="#" style="color: aliceblue;">Beasiswa Bank Indonesia tahun 2023 bagi mahasiswa Universitas Riau</a><br></br>
-                    <a href="#" class="btn-readmore">Read More</a></br></br>
-                </div>
-
-                <!-- Pengumuman -->
-               <div class="col-md-4" style="background-color: #96CAD6; color: #111B48;">
-                <br><h4>Pengumuman</h4>
-                    <a href="#"><img src="Aset/pengumuman1.png" alt="..." style="text-align: center;"></a><br></br>
-                    <a href="#" style="color: #111B48;">Tim Robotika Universitas Riau berhasil meraih juara 3 regional 1</a></br><br>
-                    <a href="#" class="btn-readmore " style="background-color: #111B48; color: #96CAD6;">Read More</a></br><br>
+    <!-- Berita Terkait -->
+    <div class="Terkait pt-4 related-news" style="padding: 40px; padding-left: 80pt;padding-right: 80pt;">
+        <h3 style=" font-weight: bold; font-size: 22px; border-bottom: 2px solid #3c8d6d;">Event</h3>
+        <div class="row">
+            <div class="col-md-4" style="padding: 20px;">
+                <a href="CPR1.html"><img src="Aset/B11.png" class="d-block w-100 img-fluid" alt="..."></a>
+                <time datetime="2023-06-01">21 JULY 2021</time> <br>
+                <a href="CPR1.html">Ani Mardhatillah, mahasiswa Teknik Informatika Juara 1 Lomba MTQ Kecamatan</a>
+            </div>
+            <div class="col-md-4" style="padding: 20px;">
+                <a href="CPR2.html"><img src="Aset/p22.png" class="d-block w-100 img-fluid" alt="..."></a>
+                <time datetime="2023-06-01">21 JULY 2021</time> <br>
+                <a href="CPR2.html">Dzikri Armansyah; Mahasiswa Teknik Informatika UNRI Juara 1 Bujang Dara Kampar</a>
+            </div>
+            <div class="col-md-4" style="padding: 20px;">
+                <a href="CPR3.html"><img src="Aset/p33.png" class="d-block w-100 img-fluid" alt="..."></a>
+                <time datetime="2023-06-01">21 JULY 2021</time> <br>
+                <a href="CPR3.html">Hakim Ata Attaturk; Mahasiswa Teknik Informatika UNRI Juara 4 Bujang Dara Pekanbaru</a>
+            </div>
         </div>
-
-        <!-- Kemitraan -->
-      <div class="container">
-        <div id="logo-carousel" class="carousel slide" data-bs-ride="carousel">
-           <div class="carousel-inner"></br></br>
-            <h3 style="text-align: center;">Kemitraan</h3>
-            <hr size="3" width="100%" color="black">
-              <div class="carousel-item active">
-                 <img src="Aset/logo-bps-1.jpg" alt="Logo Kemitraan 1" style="margin-right: 50px;">
-                 <img src="Aset/logo-cisco.jpg" alt="Logo Kemitraan 2" style="margin-right: 50px;">
-                 <img src="Aset/logo-esri-1.jpg" alt="Logo Kemitraan 3" style="margin-right: 50px;">
-                 <img src="Aset/logo-kemenkominfo.jpg" alt="Logo Kemitraan 2" style="margin-right: 50px;">
-              </div>
-              <div class="carousel-item">
-                 <img src="Aset/logo-mikrotik.jpg" alt="Logo Kemitraan" style="margin-right: 50px;">            
-                 <img src="Aset/logo-microsoft.jpg" alt="Logo Kemitraan " style="margin-right: 50px;">
-                 <img src="Aset/logo-oracle.jpg" alt="Logo Kemitraan " style="margin-right: 50px;">
-                 <img src="Aset/logo-redhat-1.jpg" alt="Logo Kemitraan ">
-              </div>
-           </div>
-           <hr size="3" width="100%" color="black"></br><br>
-           <button class="carousel-control-prev" type="button" data-bs-target="#logo-carousel" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-           </button>
-           <button class="carousel-control-next" type="button" data-bs-target="#logo-carousel" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-           </button>
+    </div>
+      
+       <!-- Kemitraan -->      
+    </header>
+    <div class="partnership" style="background-image: url(aset/bg_part1.jpg); text-align: center; padding-bottom: 80px;"><br>
+        <h3 style="padding-top: 40px;">partnership</h3><br>
+        <div class="partner-logos" >
+            <img src="aset/logo-microsoft-removebg-preview.png" alt="Partner Logo 2">
+          <img src="aset/logo-cisco-removebg-preview.png" alt="Partner Logo 2">
+          <img src="aset/logo-esri-1-removebg-preview.png" alt="Partner Logo 2"> 
+          <img src="aset/logo-kemenkominfo-removebg-preview.png" alt="Partner Logo 2">
+          <img src="aset/logo-bps-1-removebg-preview.png" alt="Partner Logo 1">
+          <img src="aset/logo-redhat-1-removebg-preview.png" alt="Partner Logo 2">
+          <img src="aset/logo-mikrotik-removebg-preview.png" alt="Partner Logo 2">
+          <img src="aset/logo-oracle-removebg-preview.png" alt="Partner Logo 2">
+        </div><br>
+      </div>
+         
+      <script>
+                function fadeIn(elem) {
+        let top = elem.getBoundingClientRect().top;
+        let screenHeight = window.innerHeight;
+        if (top < screenHeight) {
+            let logos = elem.querySelectorAll('.partner-logos img');
+            logos.forEach((logo, index) => {
+            setTimeout(() => {
+                logo.classList.add('active');
+            }, 300 * index);
+            });
+        }
+        }
+        let partnershipElem = document.querySelector('.partnership');
+        window.addEventListener('scroll', function() {
+        fadeIn(partnershipElem);
+        });</script>
         </div>
-     </div>
+   
     </header>
 
     <!-- Footer -->
     <footer>
-        <div class="footer-top " style="background-color:#0a62a9;">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-4 col-sm-12 text-white" style="padding-top: 30px; ">
-                        <img src="Aset/pngwing.com.png" style="background-color:#0a62a9;" alt="...">
-                        <div class=" medsos">
-                            <p class="text-uppercase" style="padding-top: 20pt; padding-left: 10pt; font-family: poppin; ">program studi <br> s1 teknik <br> informatika</p>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-sm-12 text-white" style="padding-top: 30px; ">
-                        <h2 style="border-bottom: 2px solid rgb(0, 128, 0); line-height: 50pt; width: 200pt; font-family: poppin;">Kotak</h2>
-                        <ul style="padding-left: 0pt; font-family: poppin;">
-                            <p>Gedung C lantai 2 Fakultas Teknik <br>
-                                Universitas Riau Kampus Binawidya <br>
-                                Jl.HR Soebrantas KM 12,5, Simpang <br>
-                                Baru, Binawidya, Pekanbaru-28293</p>
-                        </ul>
-                    </div>
-                    <div class="col-md-4 col-sm-12 text-white" style="padding-top: 30px;">
-                        <h2 style="border-bottom: 2px solid rgb(0, 128, 0); line-height: 50pt; width: 200pt; font-family: poppin;">Link Terkait</h2>
-                        <ul style="padding-left: 12pt; font-family: poppin;">
-                            <li><a href="#"></a>Beasiswa</li>
-                            <li><a href="#"></a>Berita Terkini</li>
-                            <li><a href="#"></a>Event</li>
-                            <li><a href="#"></a>Pengumuman</li>
-                            
-                        </ul>
-                    </div>
-                    <div class="col-md-12 col-sm-12 text-white align-content-center" >
-                        <div class=" medsos">
-                            <ul style="padding-left: 10pt">
-                                    <li><a class="social-media-icon" href="https://link_social_mendia_anda"><span class="fab fa-twitter"></span></a></li>
-                                    <li><a class="social-media-icon" href="https://link_social_mendia_anda"><span class="fab fa-youtube"></span></a></li>
-                                    <li><a class="social-media-icon" href="https://link_social_mendia_anda"><span class="fab fa-instagram"></span></a></li>
-                                    <li><a href="#"><i class="fa-solid fa-envelope"></i></a></li>
-                                </ul>
-                        </div>
-                    </div>
+      <div class="footer-top">
+          <div class="container">
+              <div class="row">
+                  <div class="col-md-3 col-sm-12 text-white " >
+                      <img src="Aset/logounri_footer.png" alt="..." style="padding-left: 30pt; padding-top: 10pt; width: 150px;">
+                          <p style="padding-top: 5pt; padding-left: 20pt; line-height: 2;">PROGRAM STUDI</p>
+                          <P style="margin-top: -3pt; padding-left: 40pt;">S1 TEKNIK </P>
+                          <P style="margin-top: -1pt; padding-left: 30pt;">INFORMATIKA </P>
+                  </div>
+                  <div class="col-md-3 col-sm-12 text-white" >
+                      <h2> <b>Kontak</b></h2>
+                      <ul style="padding-left: -40pt; color: #d4d7db;">
+                          <p>Gedung C lantai 2 <br> Fakultas Teknik Universitas Riau Kampus Binawidya <br> Jl.HR Soebrantas KM 12,5, <br> Simpang Baru, Binawidya, Pekanbaru-28293</p>
+                      </ul>
+                  </div>
+                  <div class="col-md-3 col-sm-12 text-white" >
+                      <h2><b>Akademik</b> </h2>
+                      <ul>
+                          <li><a href="jadwalkuliah.html">Jadwal Kuliah</a></li>
+                          <li><a href="kalender.html">Kalender Akademik</a></li>
+                          <li><a href="mikrotik.html">Sertifikasi</a></li>
+                          <li><a href="kurikulum.html">Kurikulum</a></li>
+                      </ul>
+                  </div>
+                  <div class="col-md-3 col-sm-12 text-white" >
+                    <h2 ><b>Link Terkait</b></h2>
+                    <ul>
+                        <li><a href="CBerita.html">Berita</a></li>
+                        <li><a href="CEvent.html">Event</a></li>
+                        <li><a href="CPoster.html">Poster Mahasiswa</a></li>
+                        <li><a href="CPrestasi.html">Prestasi Mahasiswa</a></li>
+                    </ul>
                 </div>
-            </div>
-        </div>
-        <div class="footer-buttom-text bg-dark" > 
-            <img src="http://informatika.ft.unri.ac.id/wp-content/uploads/akreditasi-ti-b.png"  class="rounded mx-auto d-block" alt="" style="padding-top: 10pt; padding-bottom: 10pt;">
-        </div>
-    </footer>
+                  <div class="col-md-12 col-sm-12 text-white align-content-center" >
+                      <div class=" medsos">
+                          <ul style="padding-left: 10pt">
+                                  <li><a class="social-media-icon" href="https://www.youtube.com/@teknikinformatika3453"><span class="fab fa-twitter"></span></a></li>
+                                  <li><a class="social-media-icon" href="https://www.youtube.com/@teknikinformatika3453"><span class="fab fa-youtube"></span></a></li>
+                                  <li><a class="social-media-icon" href="https://www.youtube.com/@teknikinformatika3453"><span class="fa-solid fa-envelope"></span></a></li>
+                                  <li><a class="social-media-icon" href="https://www.youtube.com/@teknikinformatika3453"><span class="fab fa-instagram"></span></a></li>
+                                </ul>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="footer-buttom-text" style="background-color: #0B2447; padding-right: 65pt; ">
+        <p style="float: left; padding: 20px; color: #eaeef2; font-size: 14px;">Copyright All Right Reserved 2021</p>
+        <img src="Aset/akreditasi.png" class="rounded mx-auto d-block" alt="" style="padding-top: 10pt; padding-bottom: 10pt; width: 100px;">
+      </div>
+      
+  </footer>
     </body>
 </html>
