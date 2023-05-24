@@ -211,7 +211,7 @@ animation: movingDots 4s linear infinite;
   font-size: 0.875rem;
   margin-right: 1.5rem;
 }
-.fa-search:hover{
+.btn-fa-search:hover:hover{
     color: #46cb4a;
 }
 @media (max-width: 767px) {

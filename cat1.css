@@ -108,7 +108,7 @@ margin-right: 1.5rem;
   }
   @media (max-width: 500px) {
     .text-center{
-  padding-top: 80pt;
+  padding-top: 1000pt;
   font-size: 2rem
  }
   }
@@ -512,9 +512,9 @@ transform: translateY(0);
 
 /* Penyesuaian tampilan pada perangkat mobile */
 @media screen and (max-width: 767px) {
-  .container {
+  /* .container {
     padding: 0 20px;
-  }
+  } */
 
   .image-grid {
     grid-template-columns: 1fr;
